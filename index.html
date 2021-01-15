@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Created by Shloka Tech - http://shlokatech.in -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar | Shloka Tech</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo"><span id="typed"></span></a>
+      <ul class="navigation">
+        <li>
+          <a
+            id="idOfHome"
+            onclick="document.getElementById('idOfHome').classList.toggle('nav__active');"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            id="idOfTVShows"
+            onclick="document.getElementById('idOfTVShows').classList.toggle('nav__active');"
+            >TV Shows</a
+          >
+        </li>
+        <li>
+          <a
+            id="idOfMovies"
+            onclick="document.getElementById('idOfMovies').classList.toggle('nav__active');"
+            >Movies</a
+          >
+        </li>
+        <li>
+          <a
+            id="idOfLatest"
+            onclick="document.getElementById('idOfLatest').classList.toggle('nav__active');"
+            >Latest</a
+          >
+        </li>
+        <li>
+          <a
+            id="idOfmyList"
+            onclick="document.getElementById('idOfmyList').classList.toggle('nav__active');"
+            >My List</a
+          >
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </header>
+
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["My Logo"],
+        backSpeed: 15,
+        smartBackspace: true,
+        backDelay: 1200,
+        startDelay: 1000,
+        typeSpeed: 25,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

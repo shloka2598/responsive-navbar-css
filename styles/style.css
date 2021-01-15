@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  z-index: 10;
+  background: #5b639c;
+}
+header .logo {
+  position: relative;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.nav__active {
+  animation: animateColor 5s infinite;
+  transition: 0.5s;
+}
+
+@keyframes animateColor {
+  0% {
+    color: #ffeb3b;
+    font-weight: bold;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #ffeb3b;
+    font-weight: bold;
+  }
+}
+
+header .navigation li {
+  list-style: none;
+  margin: 0 10px;
+}
+header .navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+header .navigation li a:hover {
+  color: #ffeb3b;
+  cursor: pointer;
+}
+header .search {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+header .search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: transparent;
+  outline-width: 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+header .search input::placeholder {
+  color: #fff;
+}
+header .search .fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
